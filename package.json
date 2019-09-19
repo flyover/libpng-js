@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/flyover/libpng-js#readme",
   "dependencies": {
-    "@types/emscripten": "0.0.31",
-    "@types/node": "^10.12.18",
+    "@types/emscripten": "^1.38.0",
+    "@types/node": "^12.7.5",
     "@types/systemjs": "^0.20.6"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-typescript2": "^0.18.1",
-    "source-map-support": "^0.5.10",
+    "source-map-support": "^0.5.11",
     "systemjs": "^0.21.6",
     "typescript": "^3.0.1"
   }
