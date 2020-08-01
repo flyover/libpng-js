@@ -140,13 +140,13 @@ clean-bind-libpng:
 	rm -f bind-libpng.wasm bind-libpng.wasm.*
 
 %.bc: %.c $(LIBPNG_SOURCE_HXX)
-	emcc $(FLAGS) $< -o $@
+	emcc $(FLAGS) -c $< -o $@
 
 %.bc: %.cpp $(LIBPNG_SOURCE_HXX)
-	emcc $(FLAGS) $< -o $@
+	emcc $(FLAGS) -c $< -o $@
 
 bind-libpng.bc: bind-libpng.cpp # $(LIBPNG_SOURCE_HXX)
-	emcc $(FLAGS) --bind $< -o $@
+	emcc $(FLAGS) --bind -c $< -o $@
 
 bind-libpng.js: $(BIND_LIBPNG_OUTPUT_BC) # $(LIBPNG_OUTPUT_BC)
 	emcc $(FLAGS) --bind $^ -o $@
